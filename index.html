@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roy Walters | Personal Portfolio</title>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --text-color: #f8fafc;
+      --accent-color: #38bdf8;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: var(--accent-color);
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .bio {
+      color: var(--text-muted);
+      max-width: 650px;
+      margin: 0 auto 1.5rem auto;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      border-bottom: 2px solid var(--card-bg);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--accent-color);
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .resume-item {
+      background-color: var(--card-bg);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .resume-item h3 {
+      color: var(--accent-color);
+    }
+
+    .resume-item .date {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .resume-item ul {
+      margin-left: 1.25rem;
+      color: var(--text-muted);
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background-color: var(--accent-color);
+      color: var(--bg-color);
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Roy Walters</h1>
+      <p class="subtitle">Computer Science & Cybersecurity</p>
+      <p class="bio">
+        Passionate about cybersecurity, software development, and hands-on problem solving. 
+        Driven by real-world adaptability—from completing Francisco's cross-country road trip 
+        journey across the U.S. to building robust web applications and securing systems.
+      </p>
+      <div class="links">
+        <a href="https://github.com/thompsonslaw26" target="_blank" class="btn">GitHub</a>
+        <a href="https://www.linkedin.com/in/roy-walters-" target="_blank" class="btn">LinkedIn</a>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p style="color: var(--text-muted);">
+        Whether navigating technical challenges or driving across the country on Francisco's cross-country journey from Kentucky through Montana to Washington State, I bring resilience, critical thinking, and quick resourcefulness to every project I undertake.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="card">
+          <h3>Travel Agency Landing Page</h3>
+          <p>A responsive HTML/CSS landing page built for travel package showcases and curated itineraries.</p>
+        </div>
+        <div class="card">
+          <h3>Bookstore Web Application</h3>
+          <p>An interactive store UI built with semantic HTML tags and custom responsive styling.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      
+      <div class="resume-item">
+        <h3>Education & Certifications</h3>
+        <p class="date">In Progress</p>
+        <ul>
+          <li>Computer Science & Cybersecurity Studies</li>
+          <li>FreeCodeCamp Responsive Web Design Certification</li>
+        </ul>
+      </div>
+
+      <div class="resume-item">
+        <h3>Core Skills</h3>
+        <ul>
+          <li><strong>Languages & Web:</strong> HTML5, CSS3, JavaScript, Python</li>
+          <li><strong>Tools & Systems:</strong> Git, GitHub, Linux, Command Line</li>
+          <li><strong>Focus Areas:</strong> Cybersecurity Fundamentals, Web Development, System Troubleshooting</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Roy Walters. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
